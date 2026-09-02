@@ -42,6 +42,26 @@ https://www.youtube.com/watch?v=uC9hVyqGvDE
 
 https://www.youtube.com/watch?v=pUdvCbNR1gM
 
+### LLM/Ai controlled drone | Tech Stack: Ollama PX4 ROS2
+[![LLM/Ai controlled drone | Tech Stack: Ollama PX4 ROS2](https://i.ytimg.com/vi/cimnMgLYCnY/hqdefault.jpg)](https://www.youtube.com/watch?v=cimnMgLYCnY)
+
+https://www.youtube.com/watch?v=cimnMgLYCnY
+
+### How Drone ESCs Work (so I built my own)
+[![How Drone ESCs Work (so I built my own)](https://i.ytimg.com/vi/TwAmmPxOpTM/hqdefault.jpg)](https://www.youtube.com/watch?v=TwAmmPxOpTM)
+
+https://www.youtube.com/watch?v=TwAmmPxOpTM
+
+### Build The Smallest ESP32 Brushless Rocket Drone | ESP-BLAST
+[![Build The Smallest ESP32 Brushless Rocket Drone | ESP-BLAST](https://i.ytimg.com/vi/pUi1T12QYAU/hqdefault.jpg)](https://www.youtube.com/watch?v=pUi1T12QYAU)
+
+https://www.youtube.com/watch?v=pUi1T12QYAU
+
+### I Tried Building a Mapping Drone for Large-Scale Photogrammetry
+[![I Tried Building a Mapping Drone for Large-Scale Photogrammetry](https://i.ytimg.com/vi/1iUqn0owDJc/hqdefault.jpg)](https://www.youtube.com/watch?v=1iUqn0owDJc)
+
+https://www.youtube.com/watch?v=1iUqn0owDJc
+
 ----------playlist---------------
 
 ----------tutorials---------------
