@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn Drone Video List</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --surface: #131a2e;
+      --surface-2: #1b2540;
+      --text: #e7ecff;
+      --muted: #9fb0d9;
+      --accent: #6ea8fe;
+      --accent-strong: #3d8bfd;
+      --border: #2a3558;
+      --shadow: rgba(0, 0, 0, 0.25);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: linear-gradient(180deg, #090e1d 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+    .container { max-width: 1320px; margin: 0 auto; padding: 24px; }
+    h1 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); }
+    .meta { margin-top: 8px; color: var(--muted); font-size: 0.95rem; }
+    .tabs {
+      margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;
+      position: sticky; top: 0; z-index: 10;
+      background: linear-gradient(180deg, rgba(11,16,32,0.95), rgba(11,16,32,0.85));
+      backdrop-filter: blur(4px); padding: 10px 0;
+    }
+    .tab { border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 8px 12px; border-radius: 999px; cursor: pointer; font-size: 0.9rem; }
+    .tab.active { background: var(--accent-strong); border-color: var(--accent-strong); color: white; }
+    .controls { margin-top: 12px; display: flex; gap: 10px; align-items: center; }
+    .controls label { color: var(--muted); font-size: 0.9rem; }
+    .controls select {
+      background: var(--surface); color: var(--text); border: 1px solid var(--border);
+      border-radius: 8px; padding: 7px 10px;
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 16px; margin-top: 14px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      overflow: hidden; box-shadow: 0 8px 20px var(--shadow); display: flex;
+      flex-direction: column; text-decoration: none; color: inherit;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .thumb-wrap { width: 100%; aspect-ratio: 16 / 9; background: #0a0f1f; }
+    .thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-body { padding: 10px 12px 12px; display: grid; gap: 8px; }
+    .card-title { margin: 0; font-size: 0.95rem; line-height: 1.35; min-height: 2.6em; }
+    .badge {
+      display: inline-flex; width: fit-content; font-size: 0.75rem; color: var(--muted);
+      border: 1px solid var(--border); border-radius: 999px; padding: 3px 8px; background: var(--surface-2);
+    }
+    .date { color: var(--muted); font-size: 0.78rem; }
+    .empty {
+      grid-column: 1 / -1;
+      margin-top: 24px;
+      padding: 36px 20px;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+    }
+    .empty code { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Learn Drone Video List</h1>
+    <p class="meta"><span id="count"></span> videos across <span id="cat-count"></span> categories</p>
+
+    <div id="tabs" class="tabs"></div>
+
+    <div class="controls">
+      <label for="sort">Sort:</label>
+      <select id="sort">
+        <option value="newest">Published date: newest first</option>
+        <option value="oldest">Published date: oldest first</option>
+      </select>
+      <label for="type">Type:</label>
+      <select id="type">
+        <option value="video" selected>Video only</option>
+        <option value="playlist">Playlist only</option>
+      </select>
+    </div>
+
+    <div id="grid" class="grid"></div>
+  </div>
+
+  <script>
+    // Add drone videos here. Thumbnails use YouTube's default pattern:
+    // https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg
+    const videos = [
+      // {
+      //   "title": "Example drone video",
+      //   "url": "https://www.youtube.com/watch?v=VIDEO_ID",
+      //   "thumbnail": "https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg",
+      //   "category": "General",
+      //   "publishedAt": "2026-09-04",
+      //   "publishedLabel": "Sep 4, 2026"
+      // }
+    ];
+    const categoryList = ["General", "Playlist", "Tutorials"];
+    function canonicalKey(url) {
+      try {
+        const parsed = new URL(url);
+        const videoId = parsed.searchParams.get("v");
+        if (videoId) return "v:" + videoId;
+        const listId = parsed.searchParams.get("list");
+        if (listId) return "list:" + listId;
+      } catch (err) {}
+      return url;
+    }
+    const uniqueVideos = videos.filter((video, index, list) => {
+      const key = canonicalKey(video.url);
+      return list.findIndex((candidate) => canonicalKey(candidate.url) === key) === index;
+    });
+    const extraCategories = uniqueVideos
+      .map((video) => video.category)
+      .filter((category) => category && !categoryList.includes(category));
+    const categories = ["All", ...categoryList, ...[...new Set(extraCategories)]];
+
+    const tabsEl = document.getElementById("tabs");
+    const gridEl = document.getElementById("grid");
+    const countEl = document.getElementById("count");
+    const catCountEl = document.getElementById("cat-count");
+    const sortEl = document.getElementById("sort");
+    const typeEl = document.getElementById("type");
+
+    let activeCategory = "All";
+
+    countEl.textContent = uniqueVideos.length;
+    catCountEl.textContent = categories.length - 1;
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function parseDate(value) {
+      if (!value) return null;
+      const t = Date.parse(value + 'T00:00:00Z');
+      return Number.isNaN(t) ? null : t;
+    }
+
+    function sortVideos(list) {
+      const mode = sortEl.value;
+      const dir = mode === 'newest' ? -1 : 1;
+      return [...list].sort((a, b) => {
+        const da = parseDate(a.publishedAt);
+        const db = parseDate(b.publishedAt);
+        if (da == null && db == null) return 0;
+        if (da == null) return 1;
+        if (db == null) return -1;
+        return (da - db) * dir;
+      });
+    }
+
+    function renderTabs() {
+      tabsEl.innerHTML = "";
+      for (const category of categories) {
+        const btn = document.createElement("button");
+        btn.className = "tab" + (category === activeCategory ? " active" : "");
+        btn.textContent = category;
+        btn.type = "button";
+        btn.addEventListener("click", () => {
+          activeCategory = category;
+          renderTabs();
+          renderGrid();
+        });
+        tabsEl.appendChild(btn);
+      }
+    }
+
+    function renderEmpty(message) {
+      const empty = document.createElement("p");
+      empty.className = "empty";
+      empty.innerHTML = message;
+      gridEl.appendChild(empty);
+    }
+
+    function renderGrid() {
+      const filtered = activeCategory === "All"
+        ? uniqueVideos
+        : uniqueVideos.filter((video) => video.category === activeCategory);
+
+      const typed = filtered.filter((video) => {
+        const isPlaylist = video.url.includes('list=');
+        return typeEl.value === 'playlist' ? isPlaylist : !isPlaylist;
+      });
+
+      const list = sortVideos(typed);
+
+      gridEl.innerHTML = "";
+      if (list.length === 0) {
+        if (uniqueVideos.length === 0) {
+          renderEmpty("No videos yet. Add entries to the <code>videos</code> array in <code>index.html</code>.");
+        } else {
+          renderEmpty("No matching videos for this filter.");
+        }
+        return;
+      }
+
+      for (const video of list) {
+        const a = document.createElement("a");
+        a.className = "card";
+        a.href = video.url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+
+        const published = video.publishedLabel || (video.publishedAt ? video.publishedAt : 'Published date unavailable');
+
+        a.innerHTML = `
+          <div class="thumb-wrap">
+            <img loading="lazy" src="${escapeHtml(video.thumbnail)}" alt="${escapeHtml(video.title)} thumbnail" />
+          </div>
+          <div class="card-body">
+            <span class="badge">${escapeHtml(video.category)}</span>
+            <h2 class="card-title">${escapeHtml(video.title)}</h2>
+            <div class="date">Published: ${escapeHtml(published)}</div>
+          </div>
+        `;
+        gridEl.appendChild(a);
+      }
+    }
+
+    sortEl.addEventListener('change', renderGrid);
+    typeEl.addEventListener('change', renderGrid);
+    renderTabs();
+    renderGrid();
+  </script>
+</body>
+</html>
