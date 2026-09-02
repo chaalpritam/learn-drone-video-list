@@ -87,6 +87,16 @@ https://www.youtube.com/watch?v=u1FR_EWiBVY
 
 https://www.youtube.com/watch?v=jiyyMi2qxzI
 
+### DIY Custom Flight Controller With Arduino Nano| How To Make A Flight Controller For Rc Plane, Drone
+[![DIY Custom Flight Controller With Arduino Nano| How To Make A Flight Controller For Rc Plane, Drone](https://i.ytimg.com/vi/Tgukds7APSI/hqdefault.jpg)](https://www.youtube.com/watch?v=Tgukds7APSI)
+
+https://www.youtube.com/watch?v=Tgukds7APSI
+
+### I Made the Drone I Couldn’t Buy
+[![I Made the Drone I Couldn’t Buy](https://i.ytimg.com/vi/1ThH9cA4eWE/hqdefault.jpg)](https://www.youtube.com/watch?v=1ThH9cA4eWE)
+
+https://www.youtube.com/watch?v=1ThH9cA4eWE
+
 ----------playlist---------------
 
 ----------tutorials---------------
