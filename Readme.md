@@ -62,6 +62,31 @@ https://www.youtube.com/watch?v=pUi1T12QYAU
 
 https://www.youtube.com/watch?v=1iUqn0owDJc
 
+### How Flight Controllers Work (so I built my own)
+[![How Flight Controllers Work (so I built my own)](https://i.ytimg.com/vi/XDYZoMRJFeQ/hqdefault.jpg)](https://www.youtube.com/watch?v=XDYZoMRJFeQ)
+
+https://www.youtube.com/watch?v=XDYZoMRJFeQ
+
+### Simplest way to build your own ESP32 bassed Mobile Controlled DRONE
+[![Simplest way to build your own ESP32 bassed Mobile Controlled DRONE](https://i.ytimg.com/vi/KXI87-axB70/hqdefault.jpg)](https://www.youtube.com/watch?v=KXI87-axB70)
+
+https://www.youtube.com/watch?v=KXI87-axB70
+
+### Building a Better 1s Lithium Ion FPV Drone
+[![Building a Better 1s Lithium Ion FPV Drone](https://i.ytimg.com/vi/05MMplxqY7M/hqdefault.jpg)](https://www.youtube.com/watch?v=05MMplxqY7M)
+
+https://www.youtube.com/watch?v=05MMplxqY7M
+
+### Arduino UNO Q based opensource AI Drone Platform - JRFCQAI - Arduino Physical AI challenge
+[![Arduino UNO Q based opensource AI Drone Platform - JRFCQAI - Arduino Physical AI challenge](https://i.ytimg.com/vi/u1FR_EWiBVY/hqdefault.jpg)](https://www.youtube.com/watch?v=u1FR_EWiBVY)
+
+https://www.youtube.com/watch?v=u1FR_EWiBVY
+
+### The freestyle drone I've been working on...
+[![The freestyle drone I've been working on...](https://i.ytimg.com/vi/jiyyMi2qxzI/hqdefault.jpg)](https://www.youtube.com/watch?v=jiyyMi2qxzI)
+
+https://www.youtube.com/watch?v=jiyyMi2qxzI
+
 ----------playlist---------------
 
 ----------tutorials---------------
