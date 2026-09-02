@@ -99,4 +99,14 @@ https://www.youtube.com/watch?v=1ThH9cA4eWE
 
 ----------playlist---------------
 
+### Build and program this Arduino drone yourself!
+[![Build and program this Arduino drone yourself!](https://i.ytimg.com/vi/QvRxxjaLjxg/hqdefault.jpg)](https://www.youtube.com/watch?v=QvRxxjaLjxg&list=PLeuMA6tJBPKsAfRfFuGrEljpBow5hPVD4)
+
+https://www.youtube.com/watch?v=QvRxxjaLjxg&list=PLeuMA6tJBPKsAfRfFuGrEljpBow5hPVD4
+
+### 1 | How to simulate a drone motor mathematically
+[![1 | How to simulate a drone motor mathematically](https://i.ytimg.com/vi/XjhY2tyhYZ8/hqdefault.jpg)](https://www.youtube.com/watch?v=XjhY2tyhYZ8&list=PLeuMA6tJBPKvqIveRYTqwBjjXLblVpeoh)
+
+https://www.youtube.com/watch?v=XjhY2tyhYZ8&list=PLeuMA6tJBPKvqIveRYTqwBjjXLblVpeoh
+
 ----------tutorials---------------
