@@ -161,8 +161,4 @@ https://www.youtube.com/watch?v=WYDJw9TsFxw&list=PL0V78eTdTTFGM4ZsZB-8frSqBhW0S1
 
 https://www.youtube.com/watch?v=hedBZ_ViAGo
 
-### Drone Programming With Python Course | 3 Hours | Including x4 Projects | Computer Vision
-[![Drone Programming With Python Course | 3 Hours | Including x4 Projects | Computer Vision](https://i.ytimg.com/vi/LmEcyQnfpDA/hqdefault.jpg)](https://www.youtube.com/watch?v=LmEcyQnfpDA)
-
-https://www.youtube.com/watch?v=LmEcyQnfpDA
 
