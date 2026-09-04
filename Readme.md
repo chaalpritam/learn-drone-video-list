@@ -149,4 +149,9 @@ https://www.youtube.com/watch?v=QvRxxjaLjxg&list=PLeuMA6tJBPKsAfRfFuGrEljpBow5hP
 
 https://www.youtube.com/watch?v=XjhY2tyhYZ8&list=PLeuMA6tJBPKvqIveRYTqwBjjXLblVpeoh
 
+### I Built an Autonomous Drone at Home: 3D Model to 3D Print (1/7)
+[![I Built an Autonomous Drone at Home: 3D Model to 3D Print (1/7)](https://i.ytimg.com/vi/WYDJw9TsFxw/hqdefault.jpg)](https://www.youtube.com/watch?v=WYDJw9TsFxw&list=PL0V78eTdTTFGM4ZsZB-8frSqBhW0S1qe1)
+
+https://www.youtube.com/watch?v=WYDJw9TsFxw&list=PL0V78eTdTTFGM4ZsZB-8frSqBhW0S1qe1
+
 ----------tutorials---------------
