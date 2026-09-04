@@ -117,6 +117,26 @@ https://www.youtube.com/watch?v=p8frNNYQNV4
 
 https://www.youtube.com/watch?v=B96JGoWQOsE
 
+### Building and Testing an AI Swarm Drone: This is scary...and cool
+[![Building and Testing an AI Swarm Drone: This is scary...and cool](https://i.ytimg.com/vi/Wob27xuQUIA/hqdefault.jpg)](https://www.youtube.com/watch?v=Wob27xuQUIA)
+
+https://www.youtube.com/watch?v=Wob27xuQUIA
+
+### Build Your Own 3D Printed Fixed-Wing Drone | Moose
+[![Build Your Own 3D Printed Fixed-Wing Drone | Moose](https://i.ytimg.com/vi/M0k620XlWAw/hqdefault.jpg)](https://www.youtube.com/watch?v=M0k620XlWAw)
+
+https://www.youtube.com/watch?v=M0k620XlWAw
+
+### I built the world's smallest FPV drone
+[![I built the world's smallest FPV drone](https://i.ytimg.com/vi/wZlViCPCWJw/hqdefault.jpg)](https://www.youtube.com/watch?v=wZlViCPCWJw)
+
+https://www.youtube.com/watch?v=wZlViCPCWJw
+
+### $15 Drone Build within 24 Hour - Challenge
+[![$15 Drone Build within 24 Hour - Challenge](https://i.ytimg.com/vi/FHk5PEZAyMA/hqdefault.jpg)](https://www.youtube.com/watch?v=FHk5PEZAyMA)
+
+https://www.youtube.com/watch?v=FHk5PEZAyMA
+
 ----------playlist---------------
 
 ### Build and program this Arduino drone yourself!
