@@ -97,6 +97,26 @@ https://www.youtube.com/watch?v=Tgukds7APSI
 
 https://www.youtube.com/watch?v=1ThH9cA4eWE
 
+### Building a sub 250g Autonomous Drone with Ardupilot and ExpressLRS AirPort Telemetry
+[![Building a sub 250g Autonomous Drone with Ardupilot and ExpressLRS AirPort Telemetry](https://i.ytimg.com/vi/u_ArriXbrR0/hqdefault.jpg)](https://www.youtube.com/watch?v=u_ArriXbrR0)
+
+https://www.youtube.com/watch?v=u_ArriXbrR0
+
+### Building an Autonomous Waypoint Drone
+[![Building an Autonomous Waypoint Drone](https://i.ytimg.com/vi/Idnx69G4E20/hqdefault.jpg)](https://www.youtube.com/watch?v=Idnx69G4E20)
+
+https://www.youtube.com/watch?v=Idnx69G4E20
+
+### GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works
+[![GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://i.ytimg.com/vi/p8frNNYQNV4/hqdefault.jpg)](https://www.youtube.com/watch?v=p8frNNYQNV4)
+
+https://www.youtube.com/watch?v=p8frNNYQNV4
+
+### I Spent 2 Years Building an Autonomous Drone...
+[![I Spent 2 Years Building an Autonomous Drone...](https://i.ytimg.com/vi/B96JGoWQOsE/hqdefault.jpg)](https://www.youtube.com/watch?v=B96JGoWQOsE)
+
+https://www.youtube.com/watch?v=B96JGoWQOsE
+
 ----------playlist---------------
 
 ### Build and program this Arduino drone yourself!
