@@ -155,3 +155,14 @@ https://www.youtube.com/watch?v=XjhY2tyhYZ8&list=PLeuMA6tJBPKvqIveRYTqwBjjXLblVp
 https://www.youtube.com/watch?v=WYDJw9TsFxw&list=PL0V78eTdTTFGM4ZsZB-8frSqBhW0S1qe1
 
 ----------tutorials---------------
+
+### Learn AI Drone Programming in a Simulator (Pysimverse) with Python | 2026
+[![Learn AI Drone Programming in a Simulator (Pysimverse) with Python | 2026](https://i.ytimg.com/vi/hedBZ_ViAGo/hqdefault.jpg)](https://www.youtube.com/watch?v=hedBZ_ViAGo)
+
+https://www.youtube.com/watch?v=hedBZ_ViAGo
+
+### Drone Programming With Python Course | 3 Hours | Including x4 Projects | Computer Vision
+[![Drone Programming With Python Course | 3 Hours | Including x4 Projects | Computer Vision](https://i.ytimg.com/vi/LmEcyQnfpDA/hqdefault.jpg)](https://www.youtube.com/watch?v=LmEcyQnfpDA)
+
+https://www.youtube.com/watch?v=LmEcyQnfpDA
+
